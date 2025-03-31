@@ -1,0 +1,28 @@
+{
+  "name": "intellisqr",
+  "version": "1.0.0",
+  "description": "Create Assigment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run dev",
+    "dev":"concurrently \"npm run dev --prefix Backend\" \"npm run dev --prefix Frontend \"",
+    "install": "concurrently \"npm i --prefix Backend\" \"npm i --prefix Frontend\"",
+    "build":"concurrently \"npm run build --prefix Backend\" \"npm run build --prefix Frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sohit-mishra/Assignment_IntelliSQR.git"
+  },
+  "author": "Sohit Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sohit-mishra/Assignment_IntelliSQR/issues"
+  },
+  "homepage": "https://github.com/sohit-mishra/Assignment_IntelliSQR#readme",
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "init": "^0.1.2",
+    "nodemon": "^3.1.9"
+  }
+}
